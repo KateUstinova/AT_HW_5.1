@@ -2,10 +2,13 @@ package ru.netology.delivery.data;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
+import lombok.val;
+
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+import java.util.Random;
 
 
 public class DataGenerator {
@@ -23,10 +26,12 @@ public class DataGenerator {
 
     }
     public static String generateName(String locale) {
+
         return faker.name().fullName();
     }
 
     public static String generatePhone(String locale) {
+
         return faker.phoneNumber().cellPhone();
     }
 
